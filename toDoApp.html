@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TO DO APP</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="appStyles.css">
+</head>
+
+
+<hr>
+
+<body>
+    <div class="topnav">
+        <a class="active" id="logout" href="./index.html">LOG OUT</a>
+        <p id="welcome-user-message">MSG HOLDER</p>
+    </div>
+    <br>
+
+    <main>
+        <div class="APPDisplay">
+            <div style="text-align: center;">
+                <button id="addNewDoActivity">➕ADD</button>
+            </div>
+            <div id="form-container">
+                <!-- <form id="form-doing">
+                    <legend>TYPE:</legend>
+
+                    <input type="radio" id="work" name="type" value="work">
+                    <label for="work">Work</label>
+
+                    <input type="radio" id="personal" name="type" value="personal">
+                    <label for="personal">Personal</label>
+
+                    <input type="radio" id="study" name="type" value="study">
+                    <label for="study">Study</label><br>
+
+                    <hr>
+                    <label for="do-content-input">✍️</label>
+                    <input type="text" id="do-content-input" name="content" placeholder="what to do"
+                        style="width: 100px;" /><br>
+                    <hr>
+                    <label for="do-endDate-input">📅 </label>
+                    <input type="datetime-local" id="do-endDate-input" name="endDate" placeholder="endDate" /><br>
+                    <hr>
+                    <button id="form-doing-SubmitButton" type="submit">SUBMIT</button>
+                </form> -->
+            </div>
+            <hr>
+            <!-- <div class="TaskFilters">
+                <button id="all-show-tasks-Btn" name="showAll" class="all" onclick="filterTasks('all')">All</button>
+                <button id="work-show-tasks-Btn" name="showWork" class="work"
+                    onclick="filterTasks('work')">Work</button>
+                <button id="personal-show-tasks-Btn" name="showPersonal" class="personal"
+                    onclick="filterTasks('personal')">Personal</button>
+                <button id="study-show-tasks-Btn" name="showStudy" class="study"
+                    onclick="filterTasks('study')">Study</button>
+            </div> -->
+            <hr>
+            <div id="DisplayAllTasks">
+                <!-- Tasks will be displayed here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>@2023 FRONT END EXAM. All rights are not reserved.</p>
+    </footer>
+
+    <script src="toDoCode.js" async defer></script>
+</body>
+
+</html>

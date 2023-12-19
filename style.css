@@ -1,0 +1,55 @@
+/* -------------------------------------- USER REGISTER/LOGIN  -------------------------------------- */
+* {
+    font-size: 1em;
+}
+
+/* -------------------------------------- BODY ELEMENTS -------------------------------------- */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: 
+    repeating-radial-gradient(
+      circle at 0 0, 
+      #eee,
+      #ccc 50px
+    ); 
+}
+
+#userConnectContainer {
+    background-color: aquamarine;
+    border: 0.1em solid cadetblue;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0.2em 0.2em rgb(27, 27, 27,10%);
+}
+
+#userConnectContainer button {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 1em;
+    background-color:#c5c5c5;
+}
+
+#userConnectContainer button:hover{
+    font-size: 1.01em;
+    padding: 12px;
+    color:#eee;
+}
+
+
+
+/* -------------------------------------- FOOTER -------------------------------------- */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    text-align: center;
+    color: white;
+}

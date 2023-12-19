@@ -1,0 +1,302 @@
+/* -------------------------------------- TO DO APP  -------------------------------------- */
+
+* {
+    font-size: 1em;
+}
+
+/* -------------------------------------- NAVBAR  -------------------------------------- */
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(0,150,91,1) 60%); 
+    color: white;
+}
+
+/* Style the welcome message */
+#welcome-user-message {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(0,150,91,1) 60%);  
+    padding: 10px; 
+    border-radius: 5px; 
+    margin: auto; 
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+#logout{
+    border: 0.2em solid rgb(0, 0, 0);
+    margin-inline-start: auto;
+}
+
+/* -------------------------------------- BODY ELEMENTS -------------------------------------- */
+
+main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: #f0f0f0;
+    /* Optional: Set a background color for the whole page */
+}
+
+#addNewDoActivity{
+    font-size: 2em;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(0,150,91,1) 60%); 
+}
+
+#addNewDoActivity:hover{
+    font-size: 2.1em;
+    background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(0,150,91,1) 60%); 
+    padding: 0.01em;
+    color:#ddd;
+    box-shadow: .2em 0.2em rgb(27, 27, 27,50%);
+}
+
+#form-doing {
+    /* background-color: aquamarine; */
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); 
+    border: 0.1em solid cadetblue;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 0.2em 0.2em rgb(27, 27, 27,10%);
+}
+
+#form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#form-container > div {
+    flex: 0 0 calc(48% - 10px);
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.individual{
+    
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+    justify-content: center;
+    border-radius: 8em;
+    border: 20em solid rgb(0, 0, 0);
+    font-size: 1.5em;
+    font-weight: bold;
+    /* grid-auto-flow: row; */
+    box-shadow: 0.3em 0.3em rgb(27, 27, 27,10%);
+    margin:auto;
+}
+
+.individual a{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;    
+}
+
+.individual button{
+    border-radius: 3em;     
+}
+
+
+/* -------------------------------------- SHOW TASKS -------------------------------------- */
+.TaskFilters button {
+    font-size: 1em;
+    padding: 8px;
+    border-radius: 3em;
+    padding: 15px;
+}
+
+.all{
+    background-color:#939393;
+}
+
+#all-show-tasks-Btn:hover {         
+    color: white;
+}
+
+.work { 
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(253,187,45,1) 100%); 
+border-radius: 8em;
+}
+
+#work-show-tasks-Btn:hover { 
+    /* background-color: orange; */    
+    color: white;
+}
+
+.personal { 
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.3169468470982143) 0%, rgba(0,184,111,1) 100%); 
+border-radius: 8em;
+}
+
+#personal-show-tasks-Btn:hover  { 
+    background-color: cadetblue;  color: white;  
+}
+
+.study{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    border-radius: 8em; 
+}
+#study-show-tasks-Btn:hover{
+    background-color:orchid;
+    color: white;
+}
+
+
+.individual{
+    border: 0.2em solid cadetblue;
+}
+
+#form-doing-SubmitButton{
+    background-color:forestgreen;
+}
+
+#form-doing-SubmitButton:hover{
+    background-color:forestgreen;
+    color: white;
+}
+
+.deleteTaskBtn{
+    background-color: tomato;
+}
+
+.deleteTaskBtn:hover{
+    color: white;
+}
+
+.updateTaskBtn{
+    background-color: rgb(71, 209, 255);
+}
+
+.updateTaskBtn:hover{
+    color: white;
+}
+/* post/upload - background-color: cadetblue;*/
+/* put/update - background-color: orange;*/
+/*  - background-color: cyan; */
+/* delete - background-color: tomato; */
+
+/* -------------------------------------- RADIO BUTTONS -------------------------------------- */
+
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio'][id='work']:checked:after {
+    background-color: orange;
+}
+
+input[type='radio'][id='personal']:checked:after {
+    background-color: cadetblue;
+}
+
+input[type='radio'][id='study']:checked:after {
+    background-color: orchid;
+}
+
+label[for='work'] {
+    background-color: orange;
+    padding:10px;
+    border-radius: 1em;
+    border: 0.1em solid cadetblue;
+    border: 0.1em solid rgb(0, 0, 0);
+}
+
+label[for='personal'] {
+    background-color: cadetblue;
+    padding:10px;
+    border-radius: 1em;
+    border: 0.1em solid rgb(0, 0, 0);
+
+}
+
+label[for='study'] {
+    background-color: orchid;
+    padding:10px;  
+    border-radius: 1em;
+    border: 0.1em solid cadetblue;
+    border: 0.1em solid rgb(0, 0, 0);
+    
+}
+
+label[for='study']:hover {
+    color: #f0f0f0;    
+}
+
+label[for='work']:hover {
+    color: #f0f0f0;    
+}
+
+label[for='personal']:hover {
+    color: #f0f0f0;    
+}
+
+
+/* -------------------------------------- FOOTER -------------------------------------- */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    text-align: center;
+    color: white;
+}
